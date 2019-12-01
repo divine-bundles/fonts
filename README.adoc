@@ -1,0 +1,117 @@
+= Deployment bundle `fonts`
+:author: Grove Pyree
+:email: grayarea@protonmail.ch
+:revdate: 2019.12.01
+:revremark: Initial commit
+:doctype: article
+// Visual
+:toc: macro
+// Subs:
+:hs: #
+:dhs: ##
+:us: _
+:dus: __
+:as: *
+:das: **
+:lsb: [
+:rsb: ]
+:url_dd: https://github.com/divine-dotfiles/divine-dotfiles
+
+++++
+<p align="center">
+<em>A deployment bundle for <a href="https://github.com/divine-dotfiles/divine-dotfiles">Divine.dotfiles</a></em>
+</p>
+++++
+
+The deployment bundle `fonts` is under development.
+
+// TODO
+
+[[bundle-main]]
+== Description
+
+// TODO
+
+[[inun-main]]
+== Installing and uninstalling the bundle
+
+// TODO
+
+[[dpls-main]]
+== Bundled deployments
+
+:leveloffset: 2
+
+= Deployment `fonts`
+:author: Grove Pyree
+:email: grayarea@protonmail.ch
+:revdate: 2019.12.01
+:revremark: Initial commit
+:doctype: article
+// Visual
+:toc:
+// Subs:
+:hs: #
+:dhs: ##
+:us: _
+:dus: __
+:as: *
+:das: **
+
+This deployment introduces your personal collection of font files (`__<name>__.ttf` and `__<name>__.otf`) into the system font directory on supported OS's.
+
+== Installation map
+
+The deployment copies any supported font files in the asset directory into the system font directory, without overwriting pre-existing font files with the same name.
+
+.Map of asset installation for the `fonts` deployment
+[%header,cols="<.^3a,^.^1,<.^3a,<.^3a",stripes=none]
+|===
+
+^.^| Asset
+^.^| Method
+^.^| Destination
+^.^| Description
+
+| `*__<name>__.otf*`
+| copied
+| `<system font dir>/*__<name>__.otf*`
+| OpenType/CFF fonts
+
+| `*__<name>__.ttf*`
+| copied
+| `<system font dir>/*__<name>__.ttf*`
+| TrueType fonts
+
+|===
+
+Operating systems currently supported:
+
+* *macOS*
+* *Ubuntu*
+
+== Included assets
+
+Zero font files are included with this deployment.
+This is intended for people with personal collections of fonts.
+
+== Dependencies
+
+This deployment is stand-alone.
+
+== Supported asset modifications
+
+Font files may be freely added to the root of the asset directory.
+For the additions to be copied into the system font directory, the deployment must be (re-)installed.
+
+== Overwriting policy
+
+For each font file being copied, if a file by the same name pre-exists in system font directory, that font is not installed.
+
+== Deployment removal notes
+
+Upon uninstallation of the deployment, only those fonts that have been previously installed by this deployment are removed.
+
+The removal does not touch anything in the asset directory.
+
+:leveloffset!:

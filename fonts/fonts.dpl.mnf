@@ -1,0 +1,8 @@
+(nf) README.adoc
+
+(prefix:font-files)
+
+# Any .otf or .ttf fonts distributed with this deployment, if any
+(ro) [^./][^/]*.ttf
+(queue:split)
+(ro) [^./][^/]*.otf
