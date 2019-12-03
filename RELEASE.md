@@ -1,0 +1,1 @@
+* [**`improvement`**] Make the `fonts` deployment accept the `.ttc` suffix in the names of the font files.

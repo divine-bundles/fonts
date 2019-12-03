@@ -3,6 +3,6 @@
 (prefix:font-files)
 
 # Any .otf or .ttf fonts distributed with this deployment, if any
-(ro) [^./][^/]*.ttf
+(ro) [^./][^/]*(.ttf|.ttc)
 (queue:split)
 (ro) [^./][^/]*.otf
